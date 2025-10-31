@@ -20,12 +20,12 @@ export default function Header() {
     )}>
       <div className="container flex h-16 items-center">
         <div className="flex items-center mr-auto">
-          <Link href={isAuthenticated ? "/dashboard" : "/login"} className="flex items-center gap-2 font-bold text-lg hover-lift">
+          <Link href={isAuthenticated ? "#" : "/login"} className="flex items-center gap-2 font-bold text-lg hover-lift cursor-pointer">
             <div className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
               <Wind className="h-6 w-6 text-primary" />
             </div>
             {/* Project name shown in the header */}
-            <span className="bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-600 to-violet-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-violet-700 transition-all duration-300 font-semibold cursor-pointer">
               RoleVault
             </span>
             {/* Authentication status badge: shows whether authentication is completed or not */}
