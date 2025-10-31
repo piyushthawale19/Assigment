@@ -4,5 +4,6 @@ JWT_SECRET="[A long, random string]"
 PORT=9002
 Database Migration (If using Prisma/PostgreSQL):Bashnpx prisma migrate dev --name init
 Start the server: npm run devThe server will run at http://localhost:5000. Frontend Setup (Next.js)Navigate to the frontend directory: cd frontendInstall dependencies: npm install (or yarn)Configure Environment: Create a file named .env.local and set your API URL:Code snippet# .env.local
-NEXT_PUBLIC_API_URL="http://localhost:/api/v1" 
+NEXT_PUBLIC_API_URL="http://localhost:5000/api/v1"
 Start the development server: npm run devThe client will run at http://localhost:9002
+Access the ApplicationOpen your browser and navigate to http://localhost:9002 to access the frontend application.📝 Additional NotesEnsure that your database is running and accessible before starting the backend server. Adjust CORS settings in the backend if necessary to allow requests from your frontend domain. For any issues or questions, refer to the project's GitHub repository or contact [Your Contact Information].Happy coding!
